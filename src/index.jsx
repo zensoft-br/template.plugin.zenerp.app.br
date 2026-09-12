@@ -1,4 +1,4 @@
-// src/index.js
+// src/index.jsx
 
 import pkg from "../package.json";
 

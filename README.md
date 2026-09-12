@@ -16,7 +16,7 @@ Unlike traditional monolithic apps, this architecture uses a **registry pattern*
 │   ├── components/       <-- UI snippets, custom buttons, table overrides
 │   ├── pages/            <-- Full page overrides (e.g., custom Quote view)
 │   ├── functions/        <-- Pure JS functions, business logic, validation
-│   └── index.js          <-- The Universal Manifest Hub (entry point)
+│   └── index.jsx          <-- The Universal Manifest Hub (entry point)
 └── package.json          <-- Project configuration and dependencies
 ```
 
@@ -59,7 +59,7 @@ To preview the production build locally:
 pnpm preview
 ```
 
-## Exposing customizations (`src/index.js`)
+## Exposing customizations (`src/index.jsx`)
 
 The entry point acts as the universal manifest hub. Everything exported here becomes available to the main Zen ERP application.
 
