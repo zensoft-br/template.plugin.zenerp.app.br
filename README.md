@@ -9,18 +9,20 @@ Unlike traditional monolithic apps, this architecture uses a **registry pattern*
 1. **The guest (this repository):** Bundles custom tenant logic into a single output file (`dist/plugin.js`).
 2. **The host (Zen ERP):** Fetches the plugin over the network natively and registers its components, pages, and functions into a runtime registry.
 
-## Project Structure
+## Project structure
 
 ```text
 ├── src/
 │   ├── components/       <-- UI snippets, custom buttons, table overrides
-│   ├── pages/            <-- Full page overrides (e.g., custom Quote view)
 │   ├── functions/        <-- Pure JS functions, business logic, validation
-│   └── index.jsx          <-- The Universal Manifest Hub (entry point)
+│   ├── menus/            <-- Menu overrides
+│   ├── pages/            <-- Full page overrides (e.g., custom Quote view)
+│   ├── resources/        <-- Resource overrides
+│   └── index.jsx         <-- The Universal Manifest Hub (entry point)
 └── package.json          <-- Project configuration and dependencies
 ```
 
-## Getting Started
+## Getting started
 
 ### Prerequisites
 
