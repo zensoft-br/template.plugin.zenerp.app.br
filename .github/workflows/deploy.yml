@@ -38,4 +38,3 @@ jobs:
         run: |
           REPO_NAME="${{ github.event.repository.name }}"
           aws s3 cp dist/plugin.js s3://plugins.zenerp.app.br/$REPO_NAME/plugin.js --cache-control "max-age=60"
-          aws s3 cp dist/plugin.js s3://plugins.zenerp.app.br/$REPO_NAME/latest/plugin.js --cache-control "max-age=60"
