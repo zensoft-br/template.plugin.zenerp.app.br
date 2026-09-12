@@ -1,11 +1,6 @@
 // src/index.js
 
 import pkg from "../package.json";
-import components_sample from "./components/sample.jsx";
-import functions_sample from "./functions/sample.js";
-import menus_main from "./menus/main.json";
-import pages_sample from "./pages/sample.jsx";
-import resources_pt_BR from "./resources.pt-BR.json";
 
 export default {
   meta: {
@@ -13,27 +8,34 @@ export default {
     version: pkg.version,
   },
 
+  // Components must be placed in src/components folder
   components: {
-    sample: components_sample,
+    sample: ({ ui }) => {
+      const { Button } = ui;
+
+      return <Button>Click me</Button>;
+    },
   },
 
+  // Functions must be placed in src/functions folder
   functions: {
-    sample: functions_sample,
+    sample: () => undefined,
   },
 
+  // Menus must be placed in src/menus folder
   menus: {
-    main: menus_main,
+    main: {},
   },
 
+  // Pages must be placed in src/pages folder
   pages: {
-    sample: pages_sample,
+    sample: ({ ui }) => undefined,
   },
 
+  // Resources must be placed in src/resources folder
   resources: {
-    "pt-BR": resources_pt_BR,
+    "pt-BR": {},
   },
 
-  onInit: (appContext) => {
-    console.log("Custom plugin initialized successfully!", appContext);
-  },
+  onInit: (appContext) => {},
 };
