@@ -9,33 +9,25 @@ export default {
   },
 
   // Components must be placed in src/components folder
-  components: {
-    sample: ({ ui }) => {
-      const { Button } = ui;
+  components: {},
 
-      return <Button>Click me</Button>;
-    },
-  },
+  // Edits must be placed in src/edits folder
+  edits: {},
 
   // Functions must be placed in src/functions folder
-  functions: {
-    sample: () => undefined,
-  },
+  functions: {},
+
+  // Grids must be placed in src/grids folder
+  grids: {}
 
   // Menus must be placed in src/menus folder
-  menus: {
-    main: {},
-  },
+  menus: {},
 
   // Pages must be placed in src/pages folder
-  pages: {
-    sample: ({ ui }) => undefined,
-  },
+  pages: {},
 
   // Resources must be placed in src/resources folder
-  resources: {
-    "pt-BR": {},
-  },
+  resources: {},
 
   onInit: (appContext) => {},
 };
