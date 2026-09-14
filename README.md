@@ -2,6 +2,11 @@
 
 This repository contains the external, self-hosted plugin and customization workspace for the tenant inside the main Zen ERP application. Built with **Vite** in library mode, this project compiles custom functionality—ranging from full page overrides and UI components to custom business logic and utilities—into a lightweight, native ES module that is dynamically injected at runtime.
 
+## Documentation
+
+For comprehensive guides, API references, and detailed instructions on how to customize each module of the Zen ERP, please refer to the official documentation:
+**[https://zenerp.info.zensoft.com.br/plugins/](https://zenerp.info.zensoft.com.br/plugins/)**
+
 ## Architecture overview
 
 Unlike traditional monolithic apps, this architecture uses a **registry pattern** to decouple tenant-specific code from the core Zen ERP codebase:
@@ -14,10 +19,12 @@ Unlike traditional monolithic apps, this architecture uses a **registry pattern*
 ```text
 ├── src/
 │   ├── components/       <-- UI snippets, custom buttons, table overrides
+│   ├── edits/            <-- Form and edit view customizations
 │   ├── functions/        <-- Pure JS functions, business logic, validation
+│   ├── grids/            <-- List, table, and column customizations
 │   ├── menus/            <-- Menu overrides
 │   ├── pages/            <-- Full page overrides (e.g., custom Quote view)
-│   ├── resources/        <-- Resource overrides
+│   ├── resources/        <-- Resource overrides (translations, assets)
 │   └── index.jsx         <-- The Universal Manifest Hub (entry point)
 └── package.json          <-- Project configuration and dependencies
 ```
