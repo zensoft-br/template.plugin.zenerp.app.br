@@ -18,7 +18,7 @@ export default {
   functions: {},
 
   // Grids must be placed in src/grids folder
-  grids: {}
+  grids: {},
 
   // Menus must be placed in src/menus folder
   menus: {},
