@@ -8,6 +8,12 @@ export default {
     version: pkg.version,
   },
 
+  // Initialization and external plugins must be placed in the init object
+  init: {
+    // Initialization function must be placed in onInit
+    onInit: (appContext) => {},
+  },
+
   // Components must be placed in src/components folder
   components: {},
 
@@ -29,5 +35,6 @@ export default {
   // Resources must be placed in src/resources folder
   resources: {},
 
-  onInit: (appContext) => {},
+  // Searchs must be placed in src/searchs folder
+  searchs: {},
 };
