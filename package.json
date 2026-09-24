@@ -13,7 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@zensoftbr/zenerpclient": "^1.0.58",
+    "@zensoftbr/shared.ui.zenerp.app.br": "^1.0.4",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
